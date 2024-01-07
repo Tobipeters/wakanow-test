@@ -31,6 +31,8 @@ export class UserCardComponent implements OnInit {
   openDialog() {
     this.dialog.open(ViewUserComponent, {
       data: this.user,
+      width: "92%",
+      maxWidth: "420px",
       position: {
         top: '20px',
       },

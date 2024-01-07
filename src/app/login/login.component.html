@@ -1,0 +1,35 @@
+<section
+  class="container d-flex align-items-center justify-content-center h-100 w-100 py-5"
+>
+  <div class="sign-in-container shadow">
+    <h3 class="title">Welcome back</h3>
+    <p class="sub-title">Login, to continue</p>
+
+    <form class="mt-5" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label>Email</label>
+        <input
+          formControlName="email"
+          class="form-control"
+          type="email"
+          placeholder="Enter email address"
+        />
+      </div>
+      <div class="mb-5">
+        <label>Password</label>
+        <input
+          formControlName="password"
+          class="form-control"
+          type="password"
+          placeholder="Enter password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-form">Submit</button>
+    </form>
+
+    <div class="footer-text" routerLink="/sign-up">Don't have an account? Sign up</div>
+  </div>
+
+  
+</section>

@@ -1,0 +1,68 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    background-color: #062863;
+  }
+  
+  .sign-in-container {
+    padding: 2.5rem;
+    width: 91%;
+    max-width: 28rem;
+    background-color: #ffffff;
+    border-radius: 1.25rem 1.25rem 1.25rem 0;
+  
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(8,62,158);
+    }
+  
+    .sub-title {
+      font-size: 0.9rem;
+      font-weight: 400;
+  
+      color: rgba(0, 0, 0, 0.7);
+    }
+  
+    .title,
+    .sub-title {
+      text-align: center;
+    }
+  
+    label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+  
+    .form-control {
+      padding: 0.75rem;
+      border-radius: 4px;
+    }
+  
+    .form-control,
+    .form-control::placeholder {
+      font-size: 0.875rem;
+    }
+  
+    .btn-form{
+      background-color: rgb(8,62,158);
+      padding: 0.75rem;
+      width: 100%;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      border-radius: 0.5rem 0.5rem 0.5rem 0;
+    }
+  
+    .footer-text{
+      color: #ffffff;
+      font-size: 00.875rem;
+      font-weight: 500;
+      position: relative;
+      top: 5rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  
