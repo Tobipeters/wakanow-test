@@ -17,6 +17,7 @@ import { SignupComponent } from './signup/signup.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { ViewUserComponent } from './components/view-user/view-user.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ViewUserComponent } from './components/view-user/view-user.component';
     UserListComponent,
     UserCardComponent,
     ViewUserComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

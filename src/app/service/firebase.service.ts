@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 
 import { TSIgnUpCred } from '../model';
 
@@ -23,12 +24,14 @@ export class FirebaseService {
       });
   }
 
-  async getAllUsers() {
-    this.firestore
-      .collection('users')
-      .valueChanges()
-      .subscribe((users: any[]) => {
-        return users;
-      });
+
+  getAllUsers(): Observable<firebase.default.User[] | any> {
+    return this.firebaseAuth.authState;
   }
+
+  getApprovedUsers() {
+    return this.firestore.collection('users', (ref) => ref.where('approved', '==', true)).valueChanges();
+  }
+
+
 }
