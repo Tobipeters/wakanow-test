@@ -1,0 +1,15 @@
+<section class="container">
+    <nav class="">
+
+    </nav>
+
+    <section class="text-center py-5" *ngIf="!users">
+        No users found
+    </section>
+
+    <main class="row" *ngIf="users">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let user of users">
+            <app-user-card [user]="user" ></app-user-card>
+        </div>
+    </main>
+</section>

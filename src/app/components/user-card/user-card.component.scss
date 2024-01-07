@@ -1,0 +1,55 @@
+.user-card {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+  border: 1px solid rgb(13, 96, 216);
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    // display: block;
+    // margin: 0 auto;
+  }
+
+  .name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1.15rem 0 0.25rem;
+    color: rgb(13, 96, 216);
+  }
+
+  .email {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.25rem;
+
+    mat-icon {
+      font-size: 0.95rem;
+      color: rgb(13, 96, 216);
+      cursor: pointer;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      background-color: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s all ease;
+
+      &:hover {
+        color: #fff;
+        background-color: rgb(13, 96, 216);
+      }
+    }
+  }
+}

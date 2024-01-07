@@ -1,0 +1,53 @@
+<section
+  class="container d-flex align-items-center justify-content-center h-100 w-100 py-5"
+>
+  <div class="sign-up-container shadow">
+    <h3 class="title">Create an Account</h3>
+    <p class="sub-title">Register to login to the admin dashboard</p>
+
+    <form class="mt-5" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label>First Name</label>
+        <input
+          formControlName="firstName"
+          class="form-control"
+          type="text"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="mb-3">
+        <label>Last Name</label>
+        <input
+          formControlName="lastName"
+          class="form-control"
+          type="text"
+          placeholder="Enter last name"
+        />
+      </div>
+      <div class="mb-3">
+        <label>Email</label>
+        <input
+          formControlName="email"
+          class="form-control"
+          type="email"
+          placeholder="Enter email address"
+        />
+      </div>
+      <div class="mb-5">
+        <label>Password</label>
+        <input
+          formControlName="password"
+          class="form-control"
+          type="password"
+          placeholder="Enter password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-form">Submit</button>
+    </form>
+
+    <div class="footer-text">Already a user? Log in</div>
+  </div>
+
+  
+</section>
